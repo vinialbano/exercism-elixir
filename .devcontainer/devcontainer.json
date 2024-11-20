@@ -1,0 +1,46 @@
+{
+  "name": "Exercism Elixir",
+  "dockerComposeFile": [
+    "../docker-compose.dev.yml",
+    "./docker-compose.devcontainer.yml"
+  ],
+  "service": "elixir",
+  "workspaceFolder": "/root/exercism/elixir",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+      },
+      "extensions": [
+        // Elixir Essential
+        "jakebecker.elixir-ls",
+
+        // Code Quality and Formatting
+        "editorconfig.ed",
+        "streetsidesoftware.code-spell-checker",
+        "oderwat.indent-rainbow",
+
+        // Development Utilities
+        "aaron-bond.better-comments",
+        "gruntfuggly.todo-tree",
+
+        // Version Control & GitHub Integration
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "github.vscode-github-actions",
+        "github.vscode-pull-request-github",
+        "vivaxy.vscode-conventional-commits"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+      "plugins": "F-Sy-H zsh-autosuggestions zsh-completions zsh-you-should-use git",
+      "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions https://github.com/MichaelAquilina/zsh-you-should-use"
+    },
+    "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  }
+}

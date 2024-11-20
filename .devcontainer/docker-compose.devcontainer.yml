@@ -1,0 +1,6 @@
+services:
+  elixir:
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    volumes:
+      - .:/root/exercism/elixir:cached
